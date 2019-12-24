@@ -1,4 +1,4 @@
-package me.study.pattern.stratege;
+package me.study.pattern.strategy;
 
 public class Application {
     public static void main(String[] args) {
