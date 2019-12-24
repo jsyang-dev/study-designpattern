@@ -1,0 +1,27 @@
+@startuml
+
+class Character {
+    weapon
+    setWeapon()
+    attack()
+}
+interface Weapon {
+    doAttack()
+}
+class Sword {
+    doAttack()
+}
+class Bow {
+    doAttack()
+}
+class Ax {
+    doAttack()
+}
+
+Character --|> Weapon
+Weapon <|-- Sword
+Weapon <|-- Bow
+Weapon <|-- Ax
+
+
+@enduml
