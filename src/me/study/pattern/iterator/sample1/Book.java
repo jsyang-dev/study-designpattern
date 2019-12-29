@@ -1,4 +1,4 @@
-package me.study.pattern.iterator;
+package me.study.pattern.iterator.sample1;
 
 public class Book {
     private String name = "";

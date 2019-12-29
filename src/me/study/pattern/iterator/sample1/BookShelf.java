@@ -1,4 +1,6 @@
-package me.study.pattern.iterator;
+package me.study.pattern.iterator.sample1;
+
+import me.study.pattern.iterator.Aggregate;
 
 public class BookShelf implements Aggregate {
     private Book[] books;
