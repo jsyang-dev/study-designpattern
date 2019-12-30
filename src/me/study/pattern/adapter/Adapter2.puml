@@ -2,7 +2,7 @@
 
 class Client {
 }
-interface Target {
+abstract class Target {
     #targetMethod1()
     #targetMethod2()
 }

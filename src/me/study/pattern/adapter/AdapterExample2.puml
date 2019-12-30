@@ -2,7 +2,7 @@
 
 class Main {
 }
-interface Print {
+abstract class Print {
     #printWeak()
     #printStrong()
 }
