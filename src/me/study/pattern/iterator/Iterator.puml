@@ -1,14 +1,14 @@
 @startuml
 
 interface Aggregate {
-    #iterator()
+    +{abstract} iterator()
 }
 class ConcreteAggregate {
     +iterator()
 }
 interface Iterator {
-    #hasNext()
-    #next()
+    +{abstract} hasNext()
+    +{abstract} next()
 }
 class ConcreteIterator {
     -aggregate

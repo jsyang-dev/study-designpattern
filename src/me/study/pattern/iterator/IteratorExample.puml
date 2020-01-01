@@ -1,7 +1,7 @@
 @startuml
 
 interface Aggregate {
-    #iterator()
+    +{abstract} iterator()
 }
 class BookShelf {
     -books
@@ -12,8 +12,8 @@ class BookShelf {
     +iterator()
 }
 interface Iterator {
-    #hasNext()
-    #next()
+    +{abstract} hasNext()
+    +{abstract} next()
 }
 class BookShelfIterator {
     -bookShelf

@@ -1,9 +1,9 @@
 @startuml
 
 abstract class AbstractClass {
-    #method1()
-    #method2()
-    #method3()
+    +{abstract} method1()
+    +{abstract} method2()
+    +{abstract} method3()
     +templateMethod()
 }
 class ConcreteClass {
@@ -12,6 +12,6 @@ class ConcreteClass {
     +method3()
 }
 
-AbstractClass <|--ConcreteClass
+AbstractClass <|-- ConcreteClass
 
 @enduml

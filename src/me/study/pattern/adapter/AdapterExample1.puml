@@ -3,8 +3,8 @@
 class Main {
 }
 interface Print {
-    #printWeak()
-    #printStrong()
+    +{abstract} printWeak()
+    +{abstract} printStrong()
 }
 class PrintBanner {
     +printWeak()
@@ -15,8 +15,8 @@ class Banner {
     +showWithAster()
 }
 
-Main -> Print
-Print <|.. PrintBanner
-PrintBanner --|> Banner
+Main --> Print
+Print <|. PrintBanner
+PrintBanner -|> Banner
 
 @enduml

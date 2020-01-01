@@ -3,8 +3,8 @@
 class Main {
 }
 abstract class Print {
-    #printWeak()
-    #printStrong()
+    +{abstract} printWeak()
+    +{abstract} printStrong()
 }
 class PrintBanner {
     -banner
@@ -16,8 +16,8 @@ class Banner {
     +showWithAster()
 }
 
-Main -> Print
-Print <|-- PrintBanner
-PrintBanner o--> Banner
+Main --> Print
+Print <|- PrintBanner
+PrintBanner o-> Banner
 
 @enduml

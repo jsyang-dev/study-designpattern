@@ -1,9 +1,9 @@
 @startuml
 
 abstract class AbstractDisplay {
-    #open()
-    #print()
-    #close()
+    +{abstract} open()
+    +{abstract} print()
+    +{abstract} close()
     +display()
 }
 class CharDisplay {
@@ -18,7 +18,7 @@ class StringDisplay {
     -printLine()
 }
 
-AbstractDisplay <|--CharDisplay
-AbstractDisplay <|--StringDisplay
+AbstractDisplay <|-- CharDisplay
+AbstractDisplay <|-- StringDisplay
 
 @enduml
