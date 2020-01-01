@@ -1,4 +1,4 @@
-package me.study.pattern.templatemethod.sample1;
+package me.study.pattern.templatemethod.example1;
 
 public abstract class AbstractDisplay {
     public abstract void open();

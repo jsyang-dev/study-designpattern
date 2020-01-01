@@ -1,4 +1,4 @@
-package me.study.pattern.adapter.sample2;
+package me.study.pattern.adapter.example2;
 
 public class PrintBanner extends Print {
     private Banner banner;

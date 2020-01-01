@@ -1,4 +1,4 @@
-package me.study.pattern.adapter.sample1;
+package me.study.pattern.adapter.example1;
 
 public class PrintBanner extends Banner implements Print {
     public PrintBanner(String string) {

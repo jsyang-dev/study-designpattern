@@ -1,4 +1,4 @@
-package me.study.pattern.adapter.sample1;
+package me.study.pattern.adapter.example2;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package me.study.pattern.iterator.sample1;
+package me.study.pattern.iterator.example1;
 
 public interface Iterator {
     boolean hasNext();
