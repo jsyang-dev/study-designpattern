@@ -1,4 +1,4 @@
-package me.study.pattern.factorymethod.example1.framework;
+package me.study.pattern.factorymethod.example.framework;
 
 public abstract class Factory {
     public final Product create(String owner) {

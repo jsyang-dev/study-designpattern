@@ -1,4 +1,4 @@
-package me.study.pattern.singleton.example1;
+package me.study.pattern.singleton.example;
 
 public class Main {
     public static void main(String[] args) {

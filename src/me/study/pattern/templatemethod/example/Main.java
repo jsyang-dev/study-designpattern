@@ -1,4 +1,4 @@
-package me.study.pattern.templatemethod.example1;
+package me.study.pattern.templatemethod.example;
 
 public class Main {
     public static void main(String[] args) {

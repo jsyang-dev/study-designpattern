@@ -1,4 +1,4 @@
-package me.study.pattern.templatemethod.example1;
+package me.study.pattern.templatemethod.example;
 
 public class CharDisplay extends AbstractDisplay {
     private char ch;

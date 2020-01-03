@@ -1,8 +1,8 @@
-package me.study.pattern.factorymethod.example1;
+package me.study.pattern.factorymethod.example;
 
-import me.study.pattern.factorymethod.example1.framework.Factory;
-import me.study.pattern.factorymethod.example1.framework.Product;
-import me.study.pattern.factorymethod.example1.idcard.IDCardFactory;
+import me.study.pattern.factorymethod.example.framework.Factory;
+import me.study.pattern.factorymethod.example.framework.Product;
+import me.study.pattern.factorymethod.example.idcard.IDCardFactory;
 
 public class Main {
     public static void main(String[] args) {

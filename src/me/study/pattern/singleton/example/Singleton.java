@@ -1,4 +1,4 @@
-package me.study.pattern.singleton.example1;
+package me.study.pattern.singleton.example;
 
 public class Singleton {
     private static Singleton singleton = new Singleton();

@@ -1,6 +1,6 @@
-package me.study.pattern.factorymethod.example1.idcard;
+package me.study.pattern.factorymethod.example.idcard;
 
-import me.study.pattern.factorymethod.example1.framework.Product;
+import me.study.pattern.factorymethod.example.framework.Product;
 
 public class IDCard extends Product {
     private String owner;
