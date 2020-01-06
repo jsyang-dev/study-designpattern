@@ -1,0 +1,27 @@
+@startuml
+
+class Manager {
+    -showcase
+    +register()
+    +create()
+}
+interface Product {
+    +{abstract} use()
+    +{abstract} createClone()
+}
+class UnderlinePen {
+    -ulchar
+    +use()
+    +createClone()
+}
+class MessageBox {
+    -decochar
+    +use()
+    +createClone()
+}
+
+Manager -> Product : Uses >
+UnderlinePen --|> Product
+MessageBox --|> Product
+
+@enduml

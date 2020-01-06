@@ -1,0 +1,15 @@
+@startuml
+
+class Client {
+}
+class Prototype {
+    +{abstract} createClone()
+}
+class ConcretePrototype {
+    +createClone()
+}
+
+Client -> Prototype : Uses >
+ConcretePrototype --|> Prototype
+
+@enduml
