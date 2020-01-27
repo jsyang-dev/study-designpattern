@@ -1,0 +1,65 @@
+@startuml
+
+namespace factory {
+    abstract class Item {
+        #caption
+        +{abstract} makeHTML()
+    }
+    abstract class Link {
+        #url
+        +{abstract} makeHTML()
+    }
+    abstract class Tray {
+        #tray
+        +add()
+        +{abstract} makeHTML()
+    }
+    abstract class Page {
+        #title
+        #author
+        +add()
+        +output()
+        +{abstract} makeHTML()
+    }
+    abstract class Factory {
+        +{static} getFactory()
+        +{abstract} createLink()
+        +{abstract} createTray()
+        +{abstract} createPage()
+    }
+}
+
+namespace listfactory {
+    class ListLink {
+        +makeHTML()
+    }
+    class ListTray {
+        +makeHTML()
+    }
+    class ListPage {
+        +makeHTML()
+    }
+    class ListFactory {
+        +createLink()
+        +createTray()
+        +createPage()
+    }
+}
+
+factory.Item <|-- factory.Link
+factory.Item <|-- factory.Tray
+factory.Item <--o factory.Tray
+factory.Link <-- factory.Factory
+factory.Tray <-- factory.Factory
+factory.Page <-- factory.Factory
+
+listfactory.ListLink <-- listfactory.ListFactory : Creates <
+listfactory.ListTray <-- listfactory.ListFactory : Creates <
+listfactory.ListPage <-- listfactory.ListFactory : Creates <
+
+factory.Link <|--- listfactory.ListLink
+factory.Tray <|--- listfactory.ListTray
+factory.Page <|--- listfactory.ListPage
+factory.Factory <|--- listfactory.ListFactory
+
+@enduml

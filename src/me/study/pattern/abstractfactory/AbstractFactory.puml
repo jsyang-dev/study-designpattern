@@ -1,0 +1,56 @@
+@startuml
+
+namespace factory {
+    abstract class AbstractProduct1 {
+        +{abstract} executeA()
+        +{abstract} executeB()
+    }
+    abstract class AbstractProduct2 {
+        +{abstract} doAlpha()
+        +{abstract} doBeta()
+    }
+    abstract class AbstractProduct3 {
+        +{abstract} performOne()
+        +{abstract} performTwo()
+    }
+    abstract class AbstractFactory {
+        +{abstract} createProduct1()
+        +{abstract} createProduct2()
+        +{abstract} createProduct3()
+    }
+}
+
+namespace concretefactory {
+    class ConcreteProduct1 {
+        +executeA()
+        +executeB()
+    }
+    class ConcreteProduct2 {
+        +doAlpha()
+        +doBeta()
+    }
+    class ConcreteProduct3 {
+        +performOne()
+        +performTwo()
+    }
+    class ConcreteFactory {
+        +createProduct1()
+        +createProduct2()
+        +createProduct3()
+    }
+}
+
+factory.AbstractProduct1 <-- factory.AbstractFactory
+factory.AbstractProduct2 <-- factory.AbstractFactory
+factory.AbstractProduct3 <-- factory.AbstractFactory
+
+concretefactory.ConcreteProduct1 <-- concretefactory.ConcreteFactory : Creates <
+concretefactory.ConcreteProduct2 <-- concretefactory.ConcreteFactory : Creates <
+concretefactory.ConcreteProduct3 <-- concretefactory.ConcreteFactory : Creates <
+
+factory.AbstractProduct1 <|--- concretefactory.ConcreteProduct1
+factory.AbstractProduct2 <|--- concretefactory.ConcreteProduct2
+factory.AbstractProduct3 <|--- concretefactory.ConcreteProduct3
+factory.AbstractFactory <|--- concretefactory.ConcreteFactory
+
+@enduml
